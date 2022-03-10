@@ -35,18 +35,17 @@ top250 = driver.find_element_by_xpath('//*[@id="imdbHeader"]/div[2]/aside/div/di
 time.sleep(3)
 
 rank = "rank alinamadi"
+name = "name alinamadi"
 #rank =driver.find_element_by_xpath('/*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[1]/td[2]').text
 #name = driver.find_elements_by_xpath('//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[1]/td[2]/a').text
 #rating = driver.find_elements_by_xpath('//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[1]/td[3]').text
 
 print(rank)
-#print(name)
+print(name)
 #print(rating)
 
 #//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[1]/td[2]
 #//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[2]/td[2]
-
-#//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[1]
 
 
 
