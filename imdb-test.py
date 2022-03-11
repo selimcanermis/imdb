@@ -142,7 +142,33 @@ def genre():
 # ! genre bittikten sonra bir yazı ekle
 # ? Top250 fonksiyonu çaılşmadan genre seçilebilir mi?
 # TODO for döngüsü yap ve genre testi oluştur.
-genre()
 
+genre()
+print("*"*75)
+
+
+def boxOffice():
+    box_click = driver.find_element_by_xpath("//*[@id='sidebar']/div[4]/span/div/div/div/div/div/div/div[1]/div/a").click()
+    time.sleep(2)
+    title = driver.find_element_by_xpath("//*[@id='main']/div/span/h1").text
+    print(title)
+    print("-"*75)
+
+    for i in range(1,11):
+        name = driver.find_element_by_xpath("//*[@id='boxoffice']/table/tbody/tr["+ str(i) +"]/td[2]/a")
+        weekend = driver.find_element_by_xpath("//*[@id='boxoffice']/table/tbody/tr["+ str(i) +"]/td[3]")
+        gross = driver.find_element_by_xpath("//*[@id='boxoffice']/table/tbody/tr["+ str(i) +"]/td[4]/span")
+        weeks = driver.find_element_by_xpath("//*[@id='boxoffice']/table/tbody/tr["+ str(i) +"]/td[5]")
+
+        print(str(i)+ ". " + name.text + " " + weekend.text + " " + gross.text + " " + weeks.text)
+        #time.sleep(2)
+
+boxOffice()
+
+
+
+
+
+print("Finish")
 time.sleep(3)
 driver.quit()
