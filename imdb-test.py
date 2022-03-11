@@ -118,6 +118,7 @@ def userChoice():
 
     return genre_name
 
+
 userChoice()
 
 def genre():
@@ -136,10 +137,11 @@ def genre():
         #time.sleep(2)
 
     driver.back()
-    time.sleep(5)
+    time.sleep(3)
 
 # ! genre bittikten sonra bir yazı ekle
 # ? Top250 fonksiyonu çaılşmadan genre seçilebilir mi?
+# TODO for döngüsü yap ve genre testi oluştur.
 genre()
 
 time.sleep(3)
